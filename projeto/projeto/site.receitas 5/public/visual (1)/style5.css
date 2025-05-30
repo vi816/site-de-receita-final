@@ -1,0 +1,15 @@
+.fazer{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+.baixo{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}

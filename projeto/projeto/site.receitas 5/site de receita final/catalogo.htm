@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="header">
+<a href="index.htm">
+    <div>
+        <img src="images.png" height="100px" width="200px" alt="">
+        <p>Bem vindo ao site de receita</p>
+    </div>
+</a>
+<nav>
+    <ul class="menu" >
+        <li><a href="index.htm">home</a></li>
+        <li><a href="catalogo.htm">receitas</a></li>
+        <li><a href="cadastro.htm">cadastro</a></li>
+    </ul>
+
+</nav>
+
+</nav>       
+    <div class="parte">
+ </header>   
+
+    <ul id="listaCategorias">
+
+    </ul>
+    <!--h1>BOLOS</h1>
+    <button onclick="reridicionar()" >Entrar</button> Bolo de chocolate
+    <button onclick="reridicionar2()" >Entrar</button> Bolo de cenoura
+    <button onclick="mudar()" >Entrar</button> Bolo de laranja
+    <button onclick="mudar2()" >Entrar</button> Bolo de limão
+    <h1>SALGADOS</h1>
+    <button onclick="entrar()" >Entrar</button> Coxinha
+    <button onclick="entrar2()" >Entrar</button> Empada
+    <button onclick="entrar3()" >Entrar</button> Pastel
+    <button onclick="mudaremos()" >Entrar</button> Enroladinho
+    <br></br>
+    <h1>SOPAS</h1>
+    <button onclick="mudaremos2()" >Entrar</button> Sopa de legumes
+    <button onclick="mudarei()" >Entrar</button> Sopa de frango
+    <button onclick="mudarei2()" >Entrar</button> Sopa de carne
+    <button onclick="mudarei3()" >Entrar</button> Sopa de peixe
+    <h1></h1-->
+</div>
+ 
+<script>
+
+async function carregaCategorias() {
+  const resCat = await fetch('http://localhost:3000/categorias');
+  const categorias = await resCat.json();
+
+  const container = document.getElementById('listaCategorias');
+  container.innerHTML = '';
+
+  for (const categoria of categorias) {
+    // Buscar receitas dessa categoria
+    const resRec = await fetch(`http://localhost:3000/receitas?categoriaId=${categoria.id}`);
+    const receitas = await resRec.json();
+
+    const catDiv = document.createElement('div');
+    catDiv.style = 'text-align:center;'
+    catDiv.innerHTML = `<h2>${categoria.nome}</h2>`;
+
+    receitas.forEach(r => {
+      const recDiv = document.createElement('div');
+      recDiv.innerHTML = `
+        <h3>${r.titulo}</h3>
+        <p>${r.descricao}</p>        
+        <hr>
+      `;
+      const botao = document.createElement('button');
+      botao.textContent = 'Entrar';
+      botao.onclick = () => redirecionar(r.id); // Certifique-se de que essa função existe
+      catDiv.appendChild(recDiv);
+      catDiv.appendChild(botao);
+
+    });
+
+    container.appendChild(catDiv);
+  }
+}
+
+
+carregaCategorias();
+
+function redirecionar(idReceita) {
+    window.location.href = "detalhe.htm?receitaId=" + idReceita;
+}
+    
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="baixo">
+
+Minhas Receitas
+
+
+
+</footer>
+</body>
+</html>

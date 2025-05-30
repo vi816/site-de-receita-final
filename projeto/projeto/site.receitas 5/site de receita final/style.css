@@ -1,0 +1,374 @@
+html{
+    height: 100%;
+}
+body, ul, li, p{
+margin: 5px;
+padding: 5px;
+font-size: 1.2em;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header a{
+    text-decoration: none;
+    color: white;
+
+}
+
+h1{
+    font-size: 120%;
+    
+}
+
+img{
+    max-width: 100%;
+    display: block;
+
+}
+.header button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.header{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+footer{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: 10px;
+
+}
+/* esse o css flex box */
+
+
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 5% auto;
+}
+
+
+.flex div {
+flex:  1 1 200px;
+    margin: 10px;
+    
+}
+
+.divForm {
+    float:left;
+    padding-left:30px;
+    margin-top:10px;
+     width:450px;
+     height: 300px;
+     padding-top:5px;
+     border-style:groove;
+     border-radius:15px;
+     border-color: black;
+     background-color: aqua;
+}
+
+.divGrid {
+    float:left;
+    width:50%;
+    margin-left:20px;
+    margin-top:10px;
+    padding-top:5px;
+    padding-left:30px;
+    border-style:groove;
+    border-radius:15px;
+    border-color: black;
+    background-color: indianred;
+    padding-bottom: 30px;
+}
+
+.cima{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    display: flex;
+}
+
+html{
+    height: 100%;
+}
+body ul{
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+
+.titulo{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.categorias{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    
+}
+h1{
+    font-size: 120%;
+}
+img{
+    max-width: 100%;
+    display: block;
+    justify-content: space-between;
+    align-items: right;
+    padding: 20px;
+}
+
+.menu2{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.baixo{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.parte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+
+}
+
+html{
+    height: 100%;
+}
+body ul{
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+
+.titulo{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.categorias{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    
+}
+h1{
+    font-size: 120%;
+}
+img{
+    max-width: 100%;
+    display: block;
+    justify-content: space-between;
+    align-items: right;
+    padding: 20px;
+}
+
+.menu2{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.baixo{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.parte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+
+}
+
+.fazer{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+.baixo{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.coxa{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    display: flex;
+}
+
+
+.baixo{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+ .receita2{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+.receita2{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}       
+.receita{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+.receita3{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+.receitas{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+.receita{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+.cima{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 10px;
+}
+.nada{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+}
+
+.p{
+    justify-content: left;
+}
+.h1{
+    justify-content: center;
+    font-size: 30px;
+}
+
+
+.p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.para{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+
+
+.baixo{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+

@@ -1,0 +1,70 @@
+html{
+    height: 100%;
+}
+body ul{
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+
+.titulo{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.categorias{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    
+}
+h1{
+    font-size: 120%;
+}
+img{
+    max-width: 100%;
+    display: block;
+    justify-content: space-between;
+    align-items: right;
+    padding: 20px;
+}
+
+.menu2{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.baixo{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.parte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5%;
+    list-style: none;
+
+}
+
+
+

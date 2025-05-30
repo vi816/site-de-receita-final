@@ -1,0 +1,23 @@
+.coxa{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    display: flex;
+}
+
+
+.baixo{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}

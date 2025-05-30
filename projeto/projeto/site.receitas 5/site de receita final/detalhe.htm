@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="header" >
+<a href="index.htm">
+    <div>
+        <img src="images.png" height="100px" width="200px" alt="">
+        <p>Bem vindo ao site de receita</p>
+    </div>
+</a>
+
+<nav>
+    <ul class="menu" >
+        <li><a href="index.htm">home</a></li>
+        <li><a href="catalogo.htm">receitas</a></li>
+        <li><a href="cadastro.htm">cadastro</a></li>
+    </ul>
+
+</nav>
+</header>
+    <ul class="veja">
+        <h1>Receitas</h1>
+    </ul>
+    <br>
+
+    <div id="conteudo"></div>
+    
+    <!--img src='BOLO DE CHOCOLATE.jpg' width='200px' height='120px' alt=''>
+    <h1>Bolo de chocolate</h1>
+    <p>INGREDIENTES:</p>
+
+    <p>Meia xicara de açucar</p>
+
+    <p>Meia xicara de oleo</p>
+
+    <p>Uma chicara de chocolate em po</p>
+
+    <p>3 ovos</p>
+
+    <p>2 xicaras de farinha de trigo</p>
+
+    <p>1 xicara de agua quente</p>
+
+    <p>Uma colher de fermento em po</p>
+    <br>
+    <br>
+    <h1>Corbetura</h1>
+
+    <p>1 xicara cha de leite</p>
+
+    <p>Meia xicara chocolate em po</p>
+
+    <p>Uma colher sopa de manteiga</p>
+
+    <p>Uma xicara char de açucar</p>
+
+    <h2>MODO DE PREPARO</h2>
+
+    <p>Em uma tigela, coloque o açúcar, o óleo, o chocolate em pó e os ovos. Misture bem.</p>
+
+    <p>Adicione a farinha de trigo e a água quente, misturando até ficar homogêneo.</p>
+
+    <p>Por último, acrescente o fermento em pó e misture delicadamente.</p>
+
+    <p>Despeje a massa em uma forma untada e enfarinhada.</p>
+
+    <p>Leve ao forno pré-aquecido a 180 graus por cerca de 40 minutos ou até que o bolo esteja assado.</p>
+
+    <p>Para a cobertura, em uma panela, misture o leite, o chocolate em pó, a manteiga e o açúcar.</p>
+
+    <p>Leve ao fogo médio, mexendo sempre, até ferver e engrossar.</p>
+
+    <p>Despeje a cobertura quente sobre o bolo assado e deixe esfriar antes de servir.</p>
+    
+    <p>Bom apetite!</p>
+    <br-->
+    
+ <script>
+
+    function getParametros() {
+      const params = new URLSearchParams(window.location.search);
+      return parseInt(params.get("receitaId"));      
+    }
+
+    const id = getParametros();
+ 
+ /*   async function carregaReceita()
+    {
+        if (!receitaId) {
+        document.getElementById("conteudo").innerHTML = "<p>Parâmetros inválidos na URL.</p>";
+        } else {
+        await fetch(apiUrl)
+            .then(res => {
+            if (!res.ok) throw new Error("Receita não encontrada");
+            return res.json();
+            })
+            .then(r => {
+           
+            if (receita) {
+                document.getElementById("conteudo").innerHTML = `
+                <h2>${receita}</h2>
+                <h3>Modo de Preparo</h3>
+                <p>${r.modo_preparo}</p>
+                <p><strong>Categoria:</strong> ${r.categoriaId}</p>
+                `;
+            } else {
+                document.getElementById("conteudo").innerHTML = "<p>Receita não encontrada nessa categoria.</p>";
+            }
+            })
+            .catch(err => {
+            document.getElementById("conteudo").innerHTML = "<p>Erro ao buscar dados.</p>";
+            console.error(err);
+            });
+        }
+    }
+*/
+
+async function carregarReceita() {
+      const res = await fetch(`http://localhost:3000/receitas/${id}`);
+      const receita = await res.json();
+
+      const detalhe = document.getElementById('conteudo');
+      detalhe.innerHTML = `
+        <h3>${receita.titulo}</h3>
+        <p>${receita.descricao}</p>
+        <div>${receita.modo_preparo}</div>
+      `;
+    }
+
+carregarReceita();
+
+</script>
+
+</body>
+</html>

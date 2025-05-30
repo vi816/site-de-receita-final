@@ -1,0 +1,15 @@
+.receita{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+
+.baixei{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}

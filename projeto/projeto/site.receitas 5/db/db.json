@@ -1,0 +1,76 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "email": "exemplo@email.com",
+      "senha": "123456"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Bolos"
+    },
+    {
+      "id": "2",
+      "nome": "Tortas"
+    },
+    {
+      "id": "3",
+      "nome": "Sopas"
+    }
+  ],
+  "receitas": [
+    {
+      "id": "6",
+      "categoriaId": 2,
+      "titulo": "Torta de Frango",
+      "descricao": "Torta de frango cremosa e fácil.",
+      "modo_preparo": "<img src='coxinha.jpg' width='200px' height='120px'  alt=''><h2>Coxinha</h2><P> INGREDIENTES</P><p>2 tabletes de caldo de galinha</p><p>Sal a gosto</p><p> 6 colheres (sopa) de Margarina Qualy Cremosa</p><p> 750g de farinha de trigo</p><p>2 ovos</p><p>2 xícaras (chá) de farinha de rosca</p><h2>MODO DE PREPARO</h2><p>Em uma panela, coloque 1 litro de água, o caldo de galinha e o sal. Leve ao fogo até ferver.</p><p>Adicione a margarina e, assim que derreter, acrescente a farinha de trigo. Misture bem até formar uma massa homogênea.</p><p>Retire do fogo e deixe esfriar.</p><p>Enquanto isso, prepare o recheio: em uma panela, coloque 1 colher (sopa) de margarina e leve ao fogo. Junte o peito de frango desfiado e refogue por 5 minutos.</p><p>Adicione o caldo de galinha e misture bem. Reserve.</p><p>Com a massa fria, faça bolinhas do tamanho de uma coxinha e abra na palma da mão.</p><p>Coloque uma colher (sopa) do recheio e feche a massa, moldando-a no formato de coxinha.</p><p>Passe as coxinhas nos ovos batidos e na farinha de rosca.</p><p>Frite em óleo quente até dourar.</p><p>Retire e coloque sobre papel toalha para absorver o excesso de gordura.</p><p>Sirva quente.</p>"
+    },
+    {
+      "id": "11",
+      "categoriaId": 3,
+      "titulo": "Sopa de Legumes",
+      "descricao": "Sopa nutritiva de legumes variados.",
+      "modo_preparo": "<img src='Sopa-de-legumes.jpg' width='200px' height='120px' alt=''><H2>INGREDIENTES</H2><p>1 cenoura</p><p>1 batata</p><p>1 abobrinha</p><p>1 chuchu</p><p>1 cebola</p><p>1 tomate</p><p>1 dente de alho</p><p>1 colher de sopa de azeite</p><p>1 litro de água</p><h2>MODO DE PREPARO</h2><p>Em uma panela, aqueça o azeite e refogue a cebola e o alho até dourar.</p><p>Adicione a cenoura, a batata, a abobrinha e o chuchu picados.</p><p>Refogue por alguns minutos e adicione o tomate picado.</p><p>Despeje a água e cozinhe até os legumes ficarem macios.</p><p>Tempere com sal e pimenta a gosto.</p><p>Sirva quente.</p><br>"
+    },
+    {
+      "id": "25",
+      "categoriaId": 1,
+      "titulo": "Bolo de cenoura",
+      "descricao": "Agora com cobertura",
+      "modo_preparo": "Asse e cubra com chocolate."
+    },
+    {
+      "id": "1748531056847",
+      "categoriaId": "2",
+      "titulo": "Torta de morango",
+      "descricao": "Deliciosa pra mais de metro 123",
+      "modo_preparo": "dsadsad"
+    },
+    {
+      "id": "1748544698624",
+      "categoriaId": "2",
+      "titulo": "Torta de limão",
+      "descricao": "muito bom",
+      "modo_preparo": "esprema o limão e faça a torta"
+    },
+    {
+      "id": "1748551028306",
+      "categoriaId": "3",
+      "titulo": "sopa de letrinhas",
+      "descricao": "letra a, b, c, d",
+      "modo_preparo": "mexa bastante"
+    }
+  ],
+  "avaliacoes": [
+    {
+      "id": "1",
+      "receitaId": 6,
+      "usuarioId": 1,
+      "nota": 5,
+      "comentario": "Delicioso!"
+    }
+  ]
+}

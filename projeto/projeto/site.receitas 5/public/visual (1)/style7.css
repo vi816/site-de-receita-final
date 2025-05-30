@@ -1,0 +1,15 @@
+.para{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+
+
+.baixo{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}

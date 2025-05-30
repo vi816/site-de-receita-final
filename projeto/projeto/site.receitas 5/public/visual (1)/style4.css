@@ -1,0 +1,24 @@
+.cima{
+    background-color: green;
+    color: white;
+    display: flex;
+    font-size: 10px;
+}
+.nada{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+}
+
+.p{
+    justify-content: left;
+}
+.h1{
+    justify-content: center;
+    font-size: 30px;
+}
